@@ -399,7 +399,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 /*ILLUSTRATION ANIMATION*/
 .illu-anim-block {
-  /*margin-top: 200px;*/
   width: 100%;
   height: 90vh;
 }
