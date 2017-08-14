@@ -364,6 +364,10 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   margin-right: 50px;
 }
 
+.coffee-subscriptions p {
+ max-width: 560px;
+}
+
 
 /*FIND OUR COFFEE SECTION*/
 .find-our-coffee h5 {
@@ -382,7 +386,13 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .find-img {max-width: 382px;}
 .find-arrow {display: inline; margin-left: 10px; baseline-shift: 0px;}
 
-.talk-to-a-human p {text-align: right;}
+
+/*TALK TO A HUMAN SECTION*/
+
+.talk-to-a-human p {
+  text-align: right;
+  max-width: 560px;
+}
 .talk-to-a-human .block-inner {max-width: 700px;}
 
 
