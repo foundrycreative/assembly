@@ -61,7 +61,6 @@ body {
 
 
 
-
 /*TEXT STYLES*/
 
 /*@font-face {font-family: fontname; src: url(font/fontname.otf);}*/
@@ -259,7 +258,33 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   vertical-align: top;
 }
 
+/*TRANSITIONS*/
+.smooth {
+  transition: .2s;  
+  transition-property:  all;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
 
+
+/*BUTTONS*/
+.button {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 20px 34px 20px 34px;
+  margin: 2 0px 0 2  0px 0;
+  border: 1px solid white;
+  border-radius: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: #3246c8; 
+}
 
 /*COLUMNS*/
 /*four column grid*/
@@ -286,8 +311,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .bg-yellow { background-color: #f6cd28}
 .bg-red { background-color: #ff5057}
 .bg-slate { background-color: #525766}
-
-
 
 /*TEXT COLOURS*/
 .text-blue { color: #3246c8 ; }
@@ -319,11 +342,11 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   transform: translateY(-100%);
 }
 
-
+/*INTRO SECTION*/
 .intro .block-inner {max-width: 700px;}
 
 
-
+/*COFFEE BLENDS SLIDER SECTION*/
 .carousel-cell {width: 100%;}
 
 .slider-container {
@@ -331,17 +354,18 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   padding-bottom: 200px;
 }
 
-.blend-info {
-  max-width: 560px;
+.blend-info {max-width: 560px;}
+
+.blend-info p {margin-bottom: 60px;}
+
+
+/*COFFEE SUBSCRIPTIONS SECTION*/
+#illu-subscription {
+  margin-right: 50px;
 }
 
-.blend-info p {
-  margin-bottom: 60px;
-}
 
-
-
-
+/*FIND OUR COFFEE SECTION*/
 .find-our-coffee h5 {
   margin-top: 40px; 
   margin-left: calc( 50% - 100px );
@@ -358,8 +382,9 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .find-img {max-width: 382px;}
 .find-arrow {display: inline; margin-left: 10px; baseline-shift: 0px;}
 
-.talk-to-a-human p {text-align: center;}
+.talk-to-a-human p {text-align: right;}
 .talk-to-a-human .block-inner {max-width: 700px;}
+
 
 
 /*ILLUSTRATION ANIMATION*/
@@ -383,9 +408,61 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   background-color: #3246c8;
 }
 
+
+
+
+/*FOOTER*/
 footer {
   background-color: #3246c8;
+  padding: 50px !important;
 }
+
+footer .block-inner {
+  text-align: center;
+}
+
+#icon-littleguy {
+  opacity: .5;
+  position: relative;
+  width: 60px;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.footer-text {
+  opacity: .5;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+}
+
+.footer-icon {
+  margin: 0 10px 0 10px;
+  display: inline-block;
+}
+
+.footer-icon {
+  opacity: .5;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+}
+
+
+
+
+/*VERY GENERAL*/
+.hide {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid blue; 
+
+}
+
 
 
 
