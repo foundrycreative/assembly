@@ -3,7 +3,7 @@ var animation = bodymovin.loadAnimation({
 	renderer: 'svg',
 	loop: true,
 	autoplay: true,
-	path: 'anim/data.json'
+	path: 'https://mariamabubakar.github.io/assembly/data.json'
 
 
 });
