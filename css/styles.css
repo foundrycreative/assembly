@@ -399,12 +399,12 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 /*ILLUSTRATION ANIMATION*/
 .illu-anim-block {
-  margin-top: 200px;
+  /*margin-top: 200px;*/
   width: 100%;
-  height: calc(70vh);
+  height: 90vh;
 }
 
-#illu-anim {
+#bm {
   width:100%;
 }
 
