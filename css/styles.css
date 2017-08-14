@@ -401,7 +401,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .illu-anim-block {
   margin-top: 200px;
   width: 100%;
-  height: calc(100vh - 200px);
+  height: calc(70vh);
 }
 
 #illu-anim {
