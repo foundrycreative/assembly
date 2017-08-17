@@ -249,12 +249,12 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 /*HEADER*/
 .nav {
   text-align: center;
-  position: fixed;
+  position: relative;
   top: 0;
-  left: calc( 50% - 125px );
+  margin:0 auto;
+  /*left: calc( 50% - 125px );*/
   z-index: 1;
-  height: 250px;
-  width: 250px;
+  width: 25vh;
   -webkit-transition: -webkit-transform .37s cubic-bezier(0.86, 0, 0.07, 1);
   -moz-transition: -moz-transform .7s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform .7s cubic-bezier(0.86, 0, 0.07, 1);
