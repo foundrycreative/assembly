@@ -128,57 +128,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 
-/*Find our blends section*/
-.bag {
-  max-width: 500px;
-  position: relative;
-  float: right;
-}
-
-.label {
-  text-align: center;
-  position: absolute;
-  top: 5px;
-  right: 146px;
-  width: 205px;
-  z-index: 1; 
-}
-
-.packaging {
-  position: relative;
-  right: -50px;
-}
-
-.blend-info {
-  margin-left: 50px;
-  position: relative;
-  top: 0px;
-}
-
-.blend-info span {
-  font-size: 28px;
-  font-family: 'Nunito', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-}
-
-#icon-espresso {
-  width: 50px;
-  display: inline;
-  position: relative;
-  top: 10px;
-  left: 10px;
-  margin-right: 20px;
-}
-
-#icon-filter {
-  width: 20px;
-  display: inline;
-  position: relative;
-  top: 10px;
-  left: 10px;
-  margin-right: 20px;
-}
 
 
 
@@ -204,8 +153,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
-
-
 
 
 
@@ -258,6 +205,10 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   vertical-align: top;
 }
 
+
+
+
+
 /*TRANSITIONS*/
 .smooth {
   transition: .2s;  
@@ -297,9 +248,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 
-
 /*COLOURS*/
-
 /*BACKGROUND COLOURS*/
 .bg-blue { background-color: #3246c8 }
 .bg-blue05 { background-color: #f5f6fc }
@@ -315,7 +264,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 /*TEXT COLOURS*/
 .text-blue { color: #3246c8 ; }
 .text-white { color: #ffffff; }
-
 
 
 
@@ -342,11 +290,83 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   transform: translateY(-100%);
 }
 
+
+/*ILLUSTRATION ANIMATION*/
+.illu-anim-block {
+  padding:0;
+  width: 100%;
+  /*height: 90vh;*/
+  margin: 0;
+}
+
+#bm {
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+
+
+
+
+
 /*INTRO SECTION*/
 .intro .block-inner {max-width: 700px;}
 
 
-/*COFFEE BLENDS SLIDER SECTION*/
+
+/*FIND OUR BLENDS SECTION*/
+.bag {
+  max-width: 500px;
+  position: relative;
+  float: right;
+}
+
+.label {
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  right: 146px;
+  width: 205px;
+  z-index: 1; 
+}
+
+.packaging {
+  position: relative;
+  right: -50px;
+}
+
+.blend-info {
+  margin-left: 50px;
+  position: relative;
+  top: 0px;
+}
+
+.blend-info span {
+  font-size: 28px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+#icon-espresso {
+  width: 50px;
+  display: inline;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-right: 20px;
+}
+
+#icon-filter {
+  width: 20px;
+  display: inline; 
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-right: 20px;
+}
+
 .carousel-cell {width: 100%;}
 
 .slider-container {
@@ -359,6 +379,10 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .blend-info p {margin-bottom: 60px;}
 
 
+
+
+
+
 /*COFFEE SUBSCRIPTIONS SECTION*/
 #illu-subscription {
   margin-right: 50px;
@@ -367,6 +391,10 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .coffee-subscriptions p {
  max-width: 560px;
 }
+
+
+
+
 
 
 /*FIND OUR COFFEE SECTION*/
@@ -387,8 +415,10 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .find-arrow {display: inline; margin-left: 10px; baseline-shift: 0px;}
 
 
-/*TALK TO A HUMAN SECTION*/
 
+
+
+/*TALK TO A HUMAN SECTION*/
 .talk-to-a-human p {
   text-align: right;
   max-width: 560px;
@@ -396,20 +426,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .talk-to-a-human .block-inner {max-width: 700px;}
 
 
-
-/*ILLUSTRATION ANIMATION*/
-.illu-anim-block {
-  padding:0;
-  width: 100%;
-  /*height: 90vh;*/
-  margin: 0;
-}
-
-#bm {
-  width:100%;
-  padding:0;
-  margin:0;
-}
 
 
 
