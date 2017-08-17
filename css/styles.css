@@ -302,6 +302,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   height: 90vh;
   margin: 0;
   position: relative;
+  overflow: hidden;
 }
 
 #bm {
