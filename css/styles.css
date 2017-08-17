@@ -1,19 +1,12 @@
-/*
-Theme Name:
-Theme URI:
-Description:
-Version: 1.0
-Author:
-Author URI:
-*/
 
 
+
+
+/*-----------------------GENERAL STYLES----------------------------*/
 
 
 /* RESET STYLES */
-
 * {box-sizing: border-box;}
-/** {border: 1px solid red;}*/
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
 big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, 
@@ -29,9 +22,7 @@ text-decoration {
 }
 
 ol, ul { list-style: none;}
-
 a {text-decoration: none; color: inherit;}
-
 a:visited {color: inherit;}
 
 body {
@@ -46,9 +37,7 @@ body {
 
 
 
-
 /*CLEARFIX*/
-
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -62,9 +51,6 @@ body {
 
 
 /*TEXT STYLES*/
-
-/*@font-face {font-family: fontname; src: url(font/fontname.otf);}*/
-
 h1, h2, h3, h4, h5 {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
@@ -77,9 +63,7 @@ h1, h2, h3, h4, h5 {
 .bg-grey {color: #3246c8;}
 .bg-white {color: #3246c8;}
 
-h1 {
-  font-size: 36px;
-}
+h1 {font-size: 36px;}
 
 h2 {
   font-size: 28px;
@@ -102,9 +86,7 @@ h4 {
   margin-bottom: 50px;
 }
 
-h5 {
-  font-size: 20px;
-}
+h5 {font-size: 20px;}
 
 p {
   font-size: 18px;
@@ -114,16 +96,12 @@ p {
 
 p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
-
 .weight-light {
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
 }
 
-
-.text-align-center {
-  text-align: center;
-}
+.text-align-center {text-align: center;}
 
 
 
@@ -132,8 +110,8 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 /*TRANSITIONS*/
-/*Fade in*/
 
+/*fade in*/
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -152,6 +130,14 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   -webkit-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
   animation-duration: 0.5s;
+}
+
+/*smooth transition*/
+.smooth {
+  transition: .2s;  
+  transition-property:  all;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 
@@ -181,9 +167,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 .block-inner-slider {
   width: 100%;
-/*  margin: 0 auto;*/
   position: relative;
-/*  overflow: hidden;*/
 }
 
 .block-inner-half {
@@ -207,15 +191,13 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 
+/*COLUMNS*/
+.col-1 { width: 25%;}
+.col-2 { width: 50%;}
+.col-3 { width: 75%;}
+.col-4 { width: 100%;}
 
 
-/*TRANSITIONS*/
-.smooth {
-  transition: .2s;  
-  transition-property:  all;
-  transition-duration: .2s;
-  transition-timing-function: ease-in-out;
-}
 
 
 /*BUTTONS*/
@@ -236,13 +218,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   background-color: white;
   color: #3246c8; 
 }
-
-/*COLUMNS*/
-/*four column grid*/
-.col-1 { width: 25%;}
-.col-2 { width: 50%;}
-.col-3 { width: 75%;}
-.col-4 { width: 100%;}
 
 
 
@@ -266,6 +241,9 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .text-white { color: #ffffff; }
 
 
+
+
+/*-----------------------PAGE ELEMENTS----------------------------*/
 
 
 /*HEADER*/
@@ -299,7 +277,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .illu-anim-block {
   padding:0;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   margin: 0;
   position: relative;
   overflow: hidden;
@@ -310,7 +288,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   padding:0;
   margin:0;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   right: 0;
 
 }
@@ -328,7 +306,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 
-/*FIND OUR BLENDS SECTION*/
+/*MEET THE BLENDS SECTION*/
 .bag {
   max-width: 500px;
   position: relative;
@@ -388,7 +366,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 }
 
 .blend-info {max-width: 560px;}
-
 .blend-info p {margin-bottom: 60px;}
 
 
@@ -397,13 +374,8 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 /*COFFEE SUBSCRIPTIONS SECTION*/
-#illu-subscription {
-  margin-right: 50px;
-}
-
-.coffee-subscriptions p {
- max-width: 560px;
-}
+#illu-subscription {margin-right: 50px;}
+.coffee-subscriptions p {max-width: 560px;}
 
 
 
@@ -436,6 +408,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   text-align: right;
   max-width: 560px;
 }
+
 .talk-to-a-human .block-inner {max-width: 700px;}
 
 
@@ -459,9 +432,7 @@ footer {
   padding: 50px !important;
 }
 
-footer .block-inner {
-  text-align: center;
-}
+footer .block-inner {text-align: center;}
 
 #icon-littleguy {
   opacity: .5;
@@ -485,13 +456,8 @@ footer .block-inner {
   display: inline-block;
 }
 
-.footer-icon {
-  opacity: .5;
-}
-
-.footer-icon:hover {
-  opacity: 1;
-}
+.footer-icon {opacity: .5;}
+.footer-icon:hover {opacity: 1;}
 
 
 
