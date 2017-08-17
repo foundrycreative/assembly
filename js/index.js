@@ -18,10 +18,10 @@ $window.on('scroll', function(){
 
 
 
-// -------- Scroll to Top --------
+// -------- Return to Top --------
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 50px
+    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(0);    // Fade in the arrow
     } else {
         $('#return-to-top').fadeOut(0);   // Else fade out the arrow
