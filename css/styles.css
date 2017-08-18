@@ -407,7 +407,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   height: 260px;
   width: 1400px;
   padding: 0;
-  margin-right: 100px;
+  margin-right: 50px;
   position: relative;
 /*  bottom: 0;
   right: 0;*/
