@@ -281,6 +281,12 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   width: 25vh;
 }
 
+@media (max-width: 960px) {
+.nav img { 
+   width: 150px;
+}
+}
+
 .nav.hidden {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
@@ -302,6 +308,18 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 /*  top: -270px;*/
   position: relative;
 /*  overflow: hidden;*/
+}
+
+@media (max-width: 960px) {
+.illu-anim-block { 
+   height: 70vh;
+}
+}
+
+@media (max-width: 500px) {
+.illu-anim-block { 
+   height: 70vh;
+}
 }
 
 #bm-1 {
