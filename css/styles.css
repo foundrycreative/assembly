@@ -294,7 +294,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 
-/*ILLUSTRATION ANIMATION*/
+/*ANIMATION*/
 .illu-anim-block {
   padding:0;
   width: 100%;
@@ -305,14 +305,13 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   overflow: hidden;
 }
 
-#bm {
+#bm-1 {
   width:100%;
   padding:0;
   margin:0;
   position: absolute;
   bottom: 0;
   right: 0;
-
 }
 
 
@@ -399,7 +398,14 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 #illu-subscription {margin-right: 50px;}
 .coffee-subscriptions p {max-width: 560px;}
 
-
+#bm-2 {
+  width:100%;
+  padding:0;
+  margin:0;
+  position: relative;
+/*  bottom: 0;
+  right: 0;*/
+}
 
 
 
