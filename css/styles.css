@@ -396,12 +396,18 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 /*COFFEE SUBSCRIPTIONS SECTION*/
 #illu-subscription {margin-right: 50px;}
+
+.coffee-subscriptions {
+  padding: 100px 100px 100px 0px;
+  overflow: hidden;
+}
+
 .coffee-subscriptions p {max-width: 560px;}
 
 #bm-2 {
   width:100%;
   padding:0;
-  margin:0;
+  margin-right: 30px;
   position: relative;
 /*  bottom: 0;
   right: 0;*/
