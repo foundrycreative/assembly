@@ -113,6 +113,13 @@ http://flickity.metafizzy.co
   line-height: 1;
 }
 
+@media (max-width: 550px) {
+  .flickity-page-dots {
+  bottom: 0px;
+  }
+}
+
+
 .flickity-rtl .flickity-page-dots { direction: rtl; }
 
 .flickity-page-dots .dot {
