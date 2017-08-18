@@ -406,9 +406,10 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 #bm-2 {
   height: 260px;
   width: 1400px;
+  position: absolute;
+  right: 0;
   padding: 0;
-  margin-right: 50px;
-  position: relative;
+  margin-right: 30px;
 /*  bottom: 0;
   right: 0;*/
 }
