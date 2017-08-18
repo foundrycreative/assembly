@@ -298,11 +298,11 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .illu-anim-block {
   padding:0;
   width: 100%;
-  height: auto;
+  /*height: auto;*/
   margin: 0;
 /*  top: -270px;*/
   position: relative;
-  overflow: hidden;
+/*  overflow: hidden;*/
 }
 
 #bm-1 {
