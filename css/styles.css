@@ -297,7 +297,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 .illu-anim-block {
   padding:0;
   width: 100%;
-  /*height: auto;*/
+  height: 95vh;
   margin: 0;
 /*  top: -270px;*/
   position: relative;
