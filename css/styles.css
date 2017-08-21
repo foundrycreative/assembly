@@ -94,6 +94,8 @@ p {
   font-family: 'Cutive Mono', monospace;
 }
 
+
+/*MEDIA QUERIES*/
 @media (max-width: 630px) {
   p {
   font-size: 16px;
@@ -110,45 +112,41 @@ p {
 }
 }
 
-p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
-
-
-
 @media (max-width: 550px) {
 
   h1 {font-size: 36px;
   text-align: center;}
 
   h2 {
-    font-size: 28px;
-    margin-bottom: 50px;
-    text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
   }
 
   h3 {
-    font-size: 13px;
-    text-transform: none;
-    text-align: left;
-    margin-bottom: 8px;
-    text-align: center;
+  font-size: 13px;
+  text-transform: none;
+  text-align: left;
+  margin-bottom: 8px;
+  text-align: center;
   }
 
   h4 {
-    font-size: 28px;
-    font-family: 'Nunito', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    text-align: center;
-    margin-bottom: 30px;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+  margin-bottom: 30px;
   }
 
   h5 {font-size: 20px;
   text-align: center;}
 
   p {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+  text-align: center;
+  margin-bottom: 30px;
+}
 }
 
 .weight-light {
@@ -158,8 +156,8 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 .text-align-center {text-align: center;}
 
-
-
+/*remove last para spacing*/
+p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 
@@ -247,32 +245,32 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 @media (max-width: 550px) {
   .block {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: 50px;
-    text-align: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+  text-align: center;
   }
   .block-inner-half {
   width: 100%;
   position: relative;
-  display: inline-block;
-  vertical-align: top;
+  overflow: hidden;
+  padding: 0px;
   text-align: center;
   }
   .block-inner-half-left {
-    width: 100%;
-  float: none;
-  position: relative;
-  vertical-align: top;
-    text-align: center;
-  }
-.block-inner-half-right {
   width: 100%;
-  float: none;
   position: relative;
-  vertical-align: top;
-    text-align: center;
+  overflow: hidden;
+  padding: 0px;
+  text-align: center;
+  }
+  .block-inner-half-right {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+  text-align: center;
 }
 }
 
@@ -365,11 +363,26 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 .nav img {
   width: 25vh;
+  max-width: 260px
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 1024px) and (orientation: portrait) {
+.nav img { 
+   width: 18vh;
+}
 }
 
 @media (max-width: 960px) {
 .nav img { 
    width: 150px;
+}
+}
+
+@media (max-width: 500px) {
+.nav img { 
+   width: 130px;
 }
 }
 
@@ -385,27 +398,15 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 
 
-/*ANIMATION*/
+/*MAIN ANIMATION*/
 .illu-anim-block {
-  padding:0;
+  padding: 0;
   width: 100%;
   height: 95vh;
   margin: 0;
 /*  top: -270px;*/
   position: relative;
 /*  overflow: hidden;*/
-}
-
-@media (max-width: 960px) {
-.illu-anim-block { 
-   height: 70vh;
-}
-}
-
-@media (max-width: 500px) {
-.illu-anim-block { 
-   height: 70vh;
-}
 }
 
 #bm-1 {
@@ -418,15 +419,46 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 }
 
 
+/*MEDIA QUERIES*/
+@media (min-height: 900px) and (orientation: portrait) {
+  .illu-anim-block {
+    height: 65vh !important;
+  }
+}
+
+@media (max-height: 899px) and (orientation: portrait) {
+  .illu-anim-block {
+    height: 55vh !important;
+  }
+}
+
+@media (max-height: 480px) and (orientation: portrait) {
+  .illu-anim-block {
+    height: 65vh !important;
+  }
+}
+
+
+
 
 
 
 
 /*INTRO SECTION*/
 .intro .block-inner {max-width: 700px;}
+.intro p:last-child {margin:0;}
 
-
-
+#stamp {
+  opacity: .7;
+  width: 50px;
+  position: relative;
+/*  bottom: 85px;
+  left: 270px;
+  margin-bottom: -60px;*/
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
 
 
 
@@ -490,46 +522,43 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 }
 
 .blend-info {max-width: 560px;}
+
 .blend-info p {margin-bottom: 60px;}
 
+
+
+/*MEDIA QUERIES*/
 @media (max-width: 960px) {
   .bag {width: 370px;}
-
   .label {
     top: 3px;
     right: 110px;
     width: 148px;
   }
-
   .packaging {
     position: relative;
     right: -40px;
   }
 }
 
-
 @media (max-width: 630px) {
   .bag {width: 280px;}
-
   .label {
     top: 2px;
     right: 82px;
     width: 110px;
   }
-
   .packaging {
     position: relative;
     right: -30px;
   }
 }
 
-
 @media (max-width: 550px) {
   .bag {
     width: 200px;
     float: none;
   }
-
   .label {
     top: 2px;
     width: 78px;
@@ -538,14 +567,12 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
     left: ;
     bottom:0;
   }
-
   .packaging {
     position: relative;
     right: 0;
     text-align: center;
     margin-bottom: 30px
   }
-
   .blend-info {
     margin-left: 0;
     position: relative;
@@ -553,12 +580,10 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
     padding: 30px;
     text-align: center;
   }
-
   .slider-container {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .blend-info p {
     margin-bottom: 30px;
   }
@@ -570,17 +595,6 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 /*COFFEE SUBSCRIPTIONS SECTION*/
 #illu-subscription {margin-right: 50px;}
 
-.coffee-subscriptions {
-  padding: 100px 100px 100px 0px;
-  overflow: hidden;
-}
-
-@media (max-width: 550px) {
-  .coffee-subscriptions {
-  padding: 50px 50px 50px 50px;
-  overflow: hidden;
-}
-}
 
 .coffee-subscriptions p {max-width: 560px;}
 
@@ -591,14 +605,12 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   right: 0;
   padding: 0;
   margin-right: 30px;
-/*  bottom: 0;
-  right: 0;*/
 }
 
 
 
 
-/*FIND OUR COFFEE SECTION*/
+/*FIND OUR COFFEE SECTION ---- hidden*/
 .find-our-coffee h5 {
   margin-top: 40px; 
   margin-left: calc( 50% - 100px );
@@ -621,6 +633,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 
 /*TALK TO A HUMAN SECTION*/
 .talk-to-a-human p {text-align: center;}
+.talk-to-a-human p:last-child {margin:0;}
 .talk-to-a-human .block-inner {max-width: 700px;}
 
 
@@ -727,7 +740,7 @@ footer .block-inner {text-align: center;}
   height: 0;
   margin: 0;
   padding: 0;
-  border-top: 1px solid blue; 
+  border-top: 1px solid #3246c8; 
 }
 
 
