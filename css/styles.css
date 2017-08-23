@@ -292,6 +292,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   border-radius: 40px;
   display: inline-block;
   cursor: pointer;
+  line-height: 1.4;
 }
 
 .button:hover {
@@ -311,6 +312,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   border-radius: 40px;
   display: inline-block;
   cursor: pointer;
+  line-height: 1.4;
 }
 
 .button-blue:hover {
@@ -573,7 +575,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
     position: relative;
     right: 0;
     text-align: center;
-    margin-bottom: 30px
+    margin-bottom: 0px;
   }
   .blend-info {
     margin-left: 0;
@@ -610,10 +612,19 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 }
 
 @media (max-width: 550px) {
+  .coffee-subscriptions .block-inner-half {
+    overflow: visible;
+  }
   #bm-2 {
   position: relative !important;
+  margin: 0;
+  margin-bottom: 30px;
 }
+  .coffee-subscriptions .block-inner-half-left {
+width: unset;
+  }
 }
+
 
 
 
@@ -713,6 +724,7 @@ footer .block-inner {text-align: center;}
   text-align: center;
   text-transform: uppercase;
   margin-top: 20px;
+  margin-bottom: 10px;
   transition: .2s;  
   transition-property:  all;
   transition-duration: 0.2s;
