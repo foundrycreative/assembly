@@ -32,3 +32,15 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
+
+
+
+// -------- Apply .loaded to preloader screen to hide it --------
+
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+ 
+});
