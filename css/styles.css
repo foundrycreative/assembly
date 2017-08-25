@@ -377,7 +377,7 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   transition: all 0.3s 0.3s ease-out;
 }
 
-.loaded #loader-wrapper{
+.loaded #loader-wrapper {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s 0.6s ease-out;
