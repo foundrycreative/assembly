@@ -93,6 +93,40 @@ p {
 
 
 /*MEDIA QUERIES*/
+@media (max-width: 2000px) {
+h1 {font-size: 30px;}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+h3 {
+  font-size: 12px;
+  text-transform: none;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+h5 {font-size: 20px;}
+
+  p {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Cutive Mono', monospace;
+}
+}
+
+
 @media (max-width: 630px) {
   p {
   font-size: 16px;
@@ -146,9 +180,10 @@ p {
 }
 }
 
-.weight-light {
+.decaf {
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
+/*  font-size: 12px;*/
 }
 
 .text-align-center {text-align: center;}
@@ -271,6 +306,21 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 }
 }
 
+
+@media (min-width: 2500px) {
+  .block {
+  padding: 120px;
+  }
+  .block-inner-half {
+
+  }
+  .block-inner-half-left {
+
+  }
+  .block-inner-half-right {
+
+}
+}
 
 /*COLUMNS*/
 .col-1 { width: 25%;}
@@ -441,27 +491,46 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 /*MAIN ANIMATION*/
 .illu-anim-block {
   padding: 0;
+  padding-top: 100px;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   margin: 0;
-  /*max-height: 1200px;*/
-/*  top: -270px;*/
   position: relative;
-/*  overflow: hidden;*/
 }
 
 #bm-1 {
   width:100%;
-
   padding:0;
   margin:0;
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   right: 0;
 }
 
 
 /*MEDIA QUERIES*/
+@media (max-width: 2000px) {
+  #bm-1 {
+  width:100%;
+  padding:0;
+  margin:0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.illu-anim-block {
+  padding: 0;
+  padding-top: 0px;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+}
+
+
 @media (min-height: 900px) and (orientation: portrait) {
   .illu-anim-block {
     height: 65vh !important;
@@ -541,6 +610,15 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   letter-spacing: .1em;
+}
+
+@media (max-width: 2000px) {
+  .blend-info span {
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
 }
 
 #icon-espresso {
