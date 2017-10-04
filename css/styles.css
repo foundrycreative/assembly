@@ -310,17 +310,11 @@ p:not(:last-child) {margin-bottom: 25px;} /*paragraph spacing*/
 @media (min-width: 2500px) {
   .block {
   padding: 120px;
+/*  height: 100vh;*/
   }
-  .block-inner-half {
-
-  }
-  .block-inner-half-left {
-
-  }
-  .block-inner-half-right {
-
 }
-}
+
+
 
 /*COLUMNS*/
 .col-1 { width: 25%;}
